@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presensi Kuliah -STMIK AMIKOM YOGYAKARTA</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/config/css/s.css">
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="dropdown-menu" class="dropdown-content container">
+      <h3>Menu dan Status Presensi</h3>
+      <a href="#"><i class="fa fa-qrcode"></i> Presensi QR</a>
+      <a href="#"><i class="fa fa-keyboard-o"></i> Presensi manual</a>
+      <a href="#"><i class="fa fa-times"></i> Gagalkan Presensi</a>
+      <a href="#"><i class="fa fa-check-square-o"></i> Crosscheck Presensi</a>
+      <a href="#"><i class="fa fa-pencil"></i> Edit Resume Materi</a>
+      <a href="#"><i class="fa fa-bell"></i> Notifikasi Sesi Perkuliahan</a>
+      <a href="#"><i class="fa fa-sign-out"></i> Selesai</a>
+      <hr />
+
+      <table class="zebra-table infoBtn">
+        <tbody>
+          <tr>
+            <td>Ruang</td>
+            <td>:</td>
+            <td>L-7.4.1</td>
+          </tr>
+          <tr>
+            <td>Tanggal</td>
+            <td>:</td>
+            <td id="date"></td>
+          </tr>
+          <tr>
+            <td>Lama sesi</td>
+            <td>:</td>
+            <td>01:31:00</td>
+          </tr>
+          <tr>
+            <td>Waktu Login</td>
+            <td>:</td>
+            <td>08:59:00</td>
+          </tr>
+          <tr>
+            <td>Waktu Selesai</td>
+            <td>:</td>
+            <td>10:30:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <section id="1">
+      <div>
+        <header>
+          <p>PEMROGRAMAN WEB</p>
+          <p class="p1">
+            Firman Asharudin,S.Kom,M.Kom (190302315)
+            <br />
+            Program Diploma Tiga-Ilmu Komputer-Teknik Informatika
+            <br />
+            23D3TI-Pemrogr1(DT196)
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <section id="2">
+      <div class="container">
+        <div class="header-block">
+          <div class="containerBtn">
+            <a onclick="toggleDropdown()">
+              <div class="zGBtn absensi dropdown-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu Presensi
+              </div>
+            </a>
+            <div class="zGBtn timer">
+              <i class="fa fa-clock-o" aria-hidden="true"></i> Sisa Waktu =
+              <span id="timer"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table class="zebra-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>nim</th>
+                <th>mahasiswa</th>
+                <th>jam</th>
+                <th>lokasi</th>
+                <th>kelas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="no">1</td>
+                <td class="nim">23.01.4970</td>
+                <td>MUHAMMAD THORIQ FAIRUSZULFA</td>
+                <td class="jam">09:00:39</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">2</td>
+                <td class="loc">23.01.4958</td>
+                <td>DIAHIRO CIPTANING NOVENDRIA</td>
+                <td class="loc">09:00:40</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">3</td>
+                <td class="loc">23.01.4975</td>
+                <td>NAUFAL TUFIQUL HAKIM</td>
+                <td class="loc">09:00:43</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">4</td>
+                <td class="loc">23.01.4972</td>
+                <td>AHMAD DONI</td>
+                <td class="loc">09:00:50</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">5</td>
+                <td class="loc">23.01.4969</td>
+                <td>ADITYA GIRI KURNIAWAN</td>
+                <td class="loc">09:00:58</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">6</td>
+                <td class="loc">23.01.5085</td>
+                <td>FRUMENTIOS DAVID IVAN SATRIA</td>
+                <td class="loc">09:00:45</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">7</td>
+                <td class="loc">23.01.4989</td>
+                <td>MUHANA NAUFAL Al-ATSARI</td>
+                <td class="loc">09:01:00</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+              <tr>
+                <td class="loc">8</td>
+                <td class="loc">23.01.4954</td>
+                <td>ZIDAN FARRAS ABDULGHANI</td>
+                <td class="loc">09:01:04</td>
+                <td class="loc"><span class="amikom">amikom</span></td>
+                <td class="kelas">23D3TI-Pemrog1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="footer"></section>
+    <script src="assets/config/js/cd.js"></script>
+    <script src="assets/config/js/dy.js"></script>
+  </body>
+</html>
